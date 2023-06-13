@@ -1,0 +1,32 @@
+#Ask user for their name
+name = input("Your name: ").capitalize().title()
+
+# Create a function
+def main(to):
+    if score >= 30:
+        print("You are passed. Welcome", to)
+    elif score <= 30:
+        print("You are not passed. Your score is only", score)
+
+
+# Output using our own function
+pw = int(input("Password: "))
+if pw == 12345678:
+   print("Password matched.....")
+   score = int(input("score: "))
+   if score >= 80:
+      print("GPA = A")
+   elif score >= 70:
+      print("GPA = B")
+   elif score >= 60:
+      print("GPA = C")
+   elif score >= 50:
+      print("GPA = D")
+   elif score >= 40:
+      print("GPA = E")
+   elif score >= 30:
+      print("GPA = A")
+elif pw != 12345678:
+   print("Wrong Password")
+
+main(name)
